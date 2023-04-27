@@ -14,5 +14,11 @@ using System.Threading.Tasks;
 
         }
         public ITable<Customer> Customers => this.GetTable<Customer>();
-    }
+        public ITable<Product> Products => this.GetTable<Product>();
+        public ITable<Order> Orders => this.GetTable<Order>();
+
+
+
+
+}
 
