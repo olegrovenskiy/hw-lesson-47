@@ -1,13 +1,5 @@
 ﻿using LinqToDB;
-using LinqToDB.DataProvider.Access;
-using LinqToDB.DataProvider.PostgreSQL;
-using LinqToDB.Linq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static LinqToDB.Reflection.Methods.LinqToDB.Insert;
+
 
 
 Console.WriteLine("Hello, World!");
@@ -45,15 +37,30 @@ Console.WriteLine(ggg.First().Firstname + ggg.First().Lastname);
 
 
 // 4. Выполнить все запросы, из выбранного ранее задания с передачей параметров.
+// запрос, который возвращает список всех пользователей старше 30 лет, у которых есть заказ на продукт с ID=1
 
 
 
+var abc =  from c in db.Customers
+           join o in db.Orders on c.Id equals o.CustomerId
+           join p in db.Products on o.ProductId equals p.Id
+           where c.Age > 30 && o.ProductId == 1
+           select new
+           {
+            first = c.Firstname,
+            last = c.Lastname,
+            product = p.Name,
+            quant = o.Quantity,
+            price = p.Price
+
+           };
 
 
 
-
-
+foreach (var a in abc)
+    Console.WriteLine(a.first + "  " + a.last + "  " + a.product + "  " + a.quant + "  " + a.price);
 
 
 
 Console.ReadKey();
+
