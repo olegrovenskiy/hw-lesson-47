@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "pLVs1Ip3sFD0XmsFriXqqIM8UVwxMYtu0WzcNtlLD727+I/oatl7fJuIDI1oNxNoKZiFQ9UErK4air6WUGpaPQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\o.rovenskiy\\source\\repos\\otus-hw-47\\hw-lesson-47\\hw-lesson-47.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\o.rovenskiy\\.nuget\\packages\\linq2db\\5.1.1\\linq2db.5.1.1.nupkg.sha512",
+    "C:\\Users\\o.rovenskiy\\.nuget\\packages\\linq2db.postgresql\\5.1.1\\linq2db.postgresql.5.1.1.nupkg.sha512",
+    "C:\\Users\\o.rovenskiy\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\o.rovenskiy\\.nuget\\packages\\npgsql\\7.0.2\\npgsql.7.0.2.nupkg.sha512",
+    "C:\\Users\\o.rovenskiy\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
